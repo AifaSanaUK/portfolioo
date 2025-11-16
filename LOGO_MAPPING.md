@@ -1,0 +1,36 @@
+# Logo Mapping for Projects
+
+## ✅ Correct Logo Assignments:
+
+1. **Book Wagon** → `bookwagon-logo.png` ✅
+   - Live: https://bookwagons.shop
+   - GitHub: https://github.com/AifaSanaUK/Book-Wagons.git
+
+2. **Netflix Clone** → `netflix-logo.png` ✅
+
+3. **OLX Clone** → `olx-logo.png` ✅
+
+4. **Redis Cache System** → `redis-logo.png` ✅
+
+5. **Todo List App** → `todo-logo.png` ✅
+
+6. **Mobile Todo App** → `todo-logo.png` ✅
+
+7. **Sign-In Form** → `todo-logo.png` ✅
+
+8. **Counter App** → `todo-logo.png` ✅
+
+9. **Alarm Clock App** → `todo-logo.png` ✅
+
+10. **Mobile Weather App** → `todo-logo.png` ✅
+
+11. **Mobile E-Commerce App** → `todo-logo.png` ✅
+
+## 📁 Logo Files Location:
+`client/public/images/logos/`
+
+## 🔄 To Update:
+Run: `npm run seed`
+
+All logos are now properly mapped and will display correctly!
+

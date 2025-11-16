@@ -1,0 +1,190 @@
+.skills-page {
+  background: #0a0a0a;
+}
+
+.skills-hero {
+  padding-top: 120px;
+}
+
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.skill-category {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+.category-title {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.skill-percentage {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: #2a2a2a;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #888, #999);
+  border-radius: 5px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.skill-item {
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(5px);
+}
+
+.skill-item:hover .skill-progress {
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.5);
+}
+
+.certifications-section {
+  margin-top: 4rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cert-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(136, 136, 136, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.cert-card:hover::before {
+  left: 100%;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #555;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cert-card h3 {
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.cert-institution {
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.cert-status {
+  display: inline-block;
+  background: #2a2a2a;
+  color: #888;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
